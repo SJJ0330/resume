@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="2.5; url='intro.html'">
+    <title>loading</title>
+    <link rel="stylesheet" type="text/css" href="dist/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="dist/css/loaders.min.css">
+     <script type="text/javascript" src="dist/js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="dist/js/loaders.css.js"></script>
+    <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('main').className += 'loaded';
+    });
+    </script>
+    <style type="text/css">
+        #animation{
+         width: 200px;
+         height: 200px;
+         margin:0 auto;
+         position: absolute;
+         left: 200px;
+        }
+        .loader{
+            width: 500px;
+            height: 200px;
+            margin: 0 auto;
+            position: relative;
+            top: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="loader">
+            <div class="loader-inner ball-pulse-rise" id="animation">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

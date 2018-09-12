@@ -1,0 +1,499 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300);
+html {
+    font-family: Open Sans, Helvetica, arial, sans-serif;
+    text-align: center;
+    background-color: #eee
+}
+
+html *,
+html:after,
+html:before {
+    box-sizing: border-box;
+    -webkit-transition: .5s;
+    transition: .5s
+}
+
+html b,
+html em,
+html i,
+html span,
+html strong {
+    -webkit-transition: none;
+    transition: none
+}
+
+:after,
+:before {
+    z-index: -1
+}
+
+h1,
+h4 {
+    font-family: Raleway, Open Sans, sans-serif;
+    margin: 0;
+    line-height: 1
+}
+
+a {
+    text-decoration: none;
+    line-height: 80px;
+    color: #000
+}
+
+.centerer {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto
+}
+
+.wrap {
+    width: 50%;
+    float: left
+}
+
+[class^=btn-] {
+    position: relative;
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    height: 80px;
+    max-width: 250px;
+    overflow: hidden;
+    border: 1px solid currentColor
+}
+
+.btn-0 {
+    color: #7c2020
+}
+
+.btn-0:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 80px;
+    background: #f92529
+}
+
+.btn-0:hover {
+    color: #fff
+}
+
+.btn-0:hover:before {
+    width: 250px
+}
+
+.btn-0:active {
+    background: #ff6767
+}
+
+.btn-1-2 {
+    color: #7c2020
+}
+
+.btn-1-2:before {
+    border-color: transparent transparent transparent #f92529;
+    left: 0
+}
+
+.btn-1-2:after,
+.btn-1-2:before {
+    content: "";
+    width: 0;
+    height: 0;
+    -webkit-transform: rotate(1turn);
+    border-style: solid;
+    border-width: 0;
+    position: absolute;
+    bottom: 0
+}
+
+.btn-1-2:after {
+    border-color: transparent transparent #f92529;
+    right: 0
+}
+
+.btn-1-2:hover {
+    color: #fff
+}
+
+.btn-1-2:hover:before {
+    border-width: 206.25px 0 0 206.25px
+}
+
+.btn-1-2:hover:after {
+    border-width: 0 0 206.25px 206.25px
+}
+
+.btn-1-2:active {
+    background: #ff6767
+}
+
+.btn-2 {
+    color: #7c2020
+}
+
+.btn-2:before {
+    border-color: transparent transparent transparent #f92529;
+    bottom: 0;
+    left: 0
+}
+
+.btn-2:after,
+.btn-2:before {
+    content: "";
+    width: 0;
+    height: 0;
+    -webkit-transform: rotate(1turn);
+    border-style: solid;
+    border-width: 0;
+    position: absolute
+}
+
+.btn-2:after {
+    border-color: transparent #f92529 transparent transparent;
+    top: 0;
+    right: 0
+}
+
+.btn-2:hover {
+    color: #fff
+}
+
+.btn-2:hover:before {
+    border-width: 165px 0 0 165px
+}
+
+.btn-2:hover:after {
+    border-width: 0 165px 165px 0
+}
+
+.btn-2:active {
+    background: #ff6767
+}
+
+.btn-3 {
+    color: #7c2020
+}
+
+.btn-3:before {
+    content: "";
+    width: 0;
+    height: 0;
+    -webkit-transform: rotate(1turn);
+    border-style: solid;
+    border-width: 0;
+    border-color: transparent transparent transparent #f92529;
+    position: absolute;
+    bottom: 0;
+    left: 0
+}
+
+.btn-3 span:before,
+.btn-3:after {
+    border-color: transparent transparent #f92529;
+    right: 0;
+    bottom: 0
+}
+
+.btn-3 span:after,
+.btn-3 span:before,
+.btn-3:after {
+    content: "";
+    width: 0;
+    height: 0;
+    -webkit-transform: rotate(1turn);
+    border-style: solid;
+    border-width: 0;
+    position: absolute
+}
+
+.btn-3 span:after {
+    border-color: #f92529 transparent transparent;
+    top: 0;
+    left: 0
+}
+
+.btn-3:hover {
+    color: #fff
+}
+
+.btn-3:hover:before {
+    border-width: 165px 0 0 165px
+}
+
+.btn-3:hover:after {
+    border-width: 0 165px 165px 0
+}
+
+.btn-3:hover span:before {
+    border-width: 0 0 165px 165px
+}
+
+.btn-3:hover span:after {
+    border-width: 165px 165px 0 0
+}
+
+.btn-3:active {
+    background: #ff6767
+}
+
+.btn-6 {
+    color: #7c2020
+}
+
+.btn-6 span {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: #f92529;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: width .4s, height .4s;
+    transition: width .4s, height .4s;
+    z-index: -1
+}
+
+.btn-6:hover {
+    color: #fff
+}
+
+.btn-6:hover span {
+    width: 562.5px;
+    height: 562.5px
+}
+
+.btn-6:active {
+    background: #ff6767
+}
+
+.btn-5 {
+    color: #7c2020
+}
+
+.btn-5:after {
+    border-color: transparent #f92529 transparent transparent;
+    top: 0;
+    right: 0
+}
+
+.btn-5:after,
+.btn-5:before {
+    content: "";
+    width: 0;
+    height: 0;
+    -webkit-transform: rotate(1turn);
+    border-style: solid;
+    border-width: 0;
+    position: absolute
+}
+
+.btn-5:before {
+    border-color: transparent transparent transparent #f92529;
+    bottom: 0;
+    left: 0
+}
+
+.btn-5:hover {
+    color: #fff
+}
+
+.btn-5:hover:after,
+.btn-5:hover:before {
+    border-width: 80px 262.5px
+}
+
+.btn-5:active {
+    background: #ff6767
+}
+
+.btn-7 {
+    color: #7c2020
+}
+
+.btn-7 span:after,
+.btn-7 span:before,
+.btn-7:after,
+.btn-7:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 63.5px;
+    height: 0;
+    background: #f92529
+}
+
+.btn-7:before {
+    left: 0
+}
+
+.btn-7:after {
+    left: 125px
+}
+
+.btn-7 span:after,
+.btn-7 span:before {
+    top: auto;
+    bottom: 0
+}
+
+.btn-7 span:before {
+    left: 62.5px
+}
+
+.btn-7 span:after {
+    left: 187.5px
+}
+
+.btn-7:hover {
+    color: #fff
+}
+
+.btn-7:hover:after,
+.btn-7:hover:before,
+.btn-7:hover span:after,
+.btn-7:hover span:before {
+    height: 80px
+}
+
+.btn-7:active {
+    background: #ff6767
+}
+
+.btn-8 {
+    color: #7c2020
+}
+
+.btn-8:after,
+.btn-8:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 0;
+    background: #f92529
+}
+
+.btn-8:after {
+    top: auto;
+    bottom: 0
+}
+
+.btn-8:hover {
+    color: #fff
+}
+
+.btn-8:hover:after,
+.btn-8:hover:before {
+    height: 40px
+}
+
+.btn-8:active {
+    background: #ff6767
+}
+
+@-webkit-keyframes a {
+    0% {
+        left: -20px
+    }
+    50% {
+        left: 50%;
+        width: 20px;
+        height: 20px
+    }
+    to {
+        left: 50%;
+        width: 375px;
+        height: 375px
+    }
+}
+
+@keyframes a {
+    0% {
+        left: -20px
+    }
+    50% {
+        left: 50%;
+        width: 20px;
+        height: 20px
+    }
+    to {
+        left: 50%;
+        width: 375px;
+        height: 375px
+    }
+}
+
+@-webkit-keyframes b {
+    0% {
+        right: -20px
+    }
+    50% {
+        right: 50%;
+        width: 20px;
+        height: 20px
+    }
+    to {
+        right: 50%;
+        width: 375px;
+        height: 375px
+    }
+}
+
+@keyframes b {
+    0% {
+        right: -20px
+    }
+    50% {
+        right: 50%;
+        width: 20px;
+        height: 20px
+    }
+    to {
+        right: 50%;
+        width: 375px;
+        height: 375px
+    }
+}
+
+.btn-11 {
+    position: relative;
+    color: #7c2020
+}
+
+.btn-11:after,
+.btn-11:before {
+    position: absolute;
+    top: 50%;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: #f92529;
+    border-radius: 50%
+}
+
+.btn-11:before {
+    left: -20px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.btn-11:after {
+    right: -20px;
+    -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%)
+}
+
+.btn-11:hover:before {
+    -webkit-animation: a .8s both;
+    animation: a .8s both
+}
+
+.btn-11:hover:after {
+    -webkit-animation: b .8s both;
+    animation: b .8s both
+}
